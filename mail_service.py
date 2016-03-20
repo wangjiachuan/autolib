@@ -1,7 +1,9 @@
+#utf-8
 from nameko.events import EventDispatcher, event_handler
 from mandrill_send_email import *
 
 class MailService(object):
+    'this module is used to handle the mail service'
     name = 'mails'
     
     def __init__(self):
